@@ -1,0 +1,13 @@
+{
+    "name": "atha/php-mvc",
+    "description": "Just a simple php code",
+    "keywords": ["php", "mvc"],
+    "license": "None",
+    "authors": [
+        {
+            "name": "Atha Tsaqif",
+            "email": "atha.3417@gmail.com",
+            "homepage": "http://example.com/"
+        }
+    ]
+}
