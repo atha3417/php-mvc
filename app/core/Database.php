@@ -1,6 +1,7 @@
 <?php 
 
 class Database {
+    private $driver = DB_DRIVER;
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASS;
@@ -12,7 +13,7 @@ class Database {
     public function __construct()
     {
         // data source name
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->db_name;
+        $dsn = $this->driver . ':host=' . $this->host . ';dbname=' . $this->db_name;
 
         $option = [
             PDO::ATTR_PERSISTENT => true,
@@ -73,7 +74,4 @@ class Database {
     {
         return $this->stmt->rowCount();
     }
-
-
-
 }
